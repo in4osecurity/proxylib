@@ -3,6 +3,18 @@ import requests as r, os, threading
 from threading import Thread
 from colorama import Fore,Style
 
+print("""
+'########::'########:::'#######::'##::::'##:'##:::'##:'##:::::::'####:'########::
+ ##.... ##: ##.... ##:'##.... ##:. ##::'##::. ##:'##:: ##:::::::. ##:: ##.... ##:
+ ##:::: ##: ##:::: ##: ##:::: ##::. ##'##::::. ####::: ##:::::::: ##:: ##:::: ##:
+ ########:: ########:: ##:::: ##:::. ###::::::. ##:::: ##:::::::: ##:: ########::
+ ##.....::: ##.. ##::: ##:::: ##::: ## ##:::::: ##:::: ##:::::::: ##:: ##.... ##:
+ ##:::::::: ##::. ##:: ##:::: ##:: ##:. ##::::: ##:::: ##:::::::: ##:: ##:::: ##:
+ ##:::::::: ##:::. ##:. #######:: ##:::. ##:::: ##:::: ########:'####: ########::
+..:::::::::..:::::..:::.......:::..:::::..:::::..:::::........::....::........:::
+TG Channel: @blackhat_lab | IDEA: @FS88ch
+""")
+
 def clear():
 	os.system('cls' if os.name=='nt' else 'clear')
 
@@ -17,7 +29,8 @@ def check(ip, prox):
 		f.write("{}\n".format(prox))
 		f.close()
 	else:
-		print(Fore.RED+"{} bad".format(prox))
+		#print(Fore.RED+"{} bad".format(prox))
+		pass
 
 url = "https://api.proxyscrape.com/?request=displayproxies&proxytype=http"
 req = r.get(url)
