@@ -2,6 +2,7 @@
 import requests as r, os, threading
 from threading import Thread
 from colorama import Fore,Style
+import time
 
 print("""
 ________ ________ _______ ____  ____  ________ ________________ 
@@ -11,6 +12,8 @@ _  ____/ _  _, _/ / /_/ / _    |  _  /  _  /_____/ /   _  /_/ /
 /_/      /_/ |_|  \____/  /_/|_|  /_/   /_____//___/   /_____/  
 TG Channel: @blackhat_lab | IDEA: @FS88ch
 """)
+
+time.sleep(5)
 
 def clear():
 	os.system('cls' if os.name=='nt' else 'clear')
